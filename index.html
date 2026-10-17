@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Games</title>
+</head>
+<body>
+    <header>
+        <h1>Games</h1>
+
+        <div class="menu">
+            <div class="hamburger">
+                    <img src="hambuger.png" alt="Hamburger Menu">
+            </div>
+            <nav class="nav">
+                <ul class="menu-list">
+                    <li><a href="#">Spel</a></li>
+                    <li><a href="#category">Till Spel</a></li>
+                    <li><a href="#footer">Slutsidan</a></li>
+                </ul>
+            </nav>    
+                
+        <!--<span class="mobile-menu-toggle">&#9776;  --this make the three lines-- but did not like this metod from w3schools</span>-->
+    </div>
+
+    </header>
+
+   
+    
+    <div class="games">Spelkategorier</div>
+    
+
+ <!--Form for selecting a category -->
+    <form>
+        <input type="checkbox" id="games" name="games" value="genre">
+            <label for="games"> Games</label><br>
+        <input type="checkbox" id="games" name="games" value="Platform">
+            <label for="games"> Platform</label><br>
+  <!--This part was to ambitious of me trying and not finishing-->          
+        
+        <label for="category">Välj kategori:</label>
+        <input type="text" id="categoryInput" placeholder="Skriv kategori här">
+        <select id="category" name="category">
+            <option value="Action-Adventure">Action-Adventure</option>
+            <option value="Fighting">Fighting</option>
+            <option value="RPG">RPG</option>
+            <option value="strategy">Strategy</option>
+        </select>
+    </form>
+
+
+    <footer id="footer">
+        <p>&copy; 2026 My Website. All rights reserved.</p>      
+    </footer>
+</body>
+</html>
