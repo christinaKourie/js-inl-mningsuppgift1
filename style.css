@@ -93,9 +93,7 @@ header {
 
 .menu-list {
     position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
 }
 
 .hamburger{
@@ -118,7 +116,9 @@ header {
 
 
  /*.menu-list{
-  
+   display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }

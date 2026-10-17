@@ -76,6 +76,7 @@ images.forEach((button, index) => {//loop through the buttons and add an event l
         alert(` ${gameCategories[index].name}`);//show an alert with the name of the game with picture... if it works
     });
 });
+//it hard to make a picture show on alert... Maybe popup but i dont now how!?
 
 
 
@@ -99,24 +100,17 @@ menu.addEventListener('click', () => {
 //have to make filter in loop for my array 
 
 //gameCategories.filter(game => game.genre === selectedGenre);
-
 //function showGames(gamecategory, index) {
-
 //const genre = document.getElementById("category").value;
-
 //const filteredGames = gameCategories.filter(
     //games => games.genre === genre
-
 //);
 
-//const showGames (gamecategory,index)
-//rendergenre(genre)
-
 //document.getElementById("category").innerHTML =
+//filteredGames.map(games => `<li>${games.title}</li>`).join("");}
+//garbage this later dont work
 
-//filteredGames.map(games => `<li>${games.title}</li>`).join("");
 
-//}
 
 // get the id from <select> 
 const categorySelect = document.getElementById("category");
@@ -124,18 +118,19 @@ const categorySelect = document.getElementById("category");
 // Filter when changing category 
 categorySelect.addEventListener("change", () => {
   const selectedGenre = categorySelect.value;
-//if and else so that every game is visable before you choose category
+//if so that every game is visable before you choose category and else for the choose that get filtered to show
   if (selectedGenre === "all") {
     displayGames(gameCategories);
   } else {
     const filteredGames = gameCategories.filter(
-      game => game.genre == selectedGenre
+      game => game.genre === selectedGenre
     );
 
-    //displayGames(filteredGames);
+    displayGames(filteredGames);
   }
 });
 
+//...did not work as wanted, does not filter and the if statment just make copy (frustrastion)
 
 
 
